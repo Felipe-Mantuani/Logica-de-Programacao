@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 int ordemCrescente(int vetor[], int n){
-    if(n <=1){
+    if(n <= 1){
         return 1;
     }
 
@@ -15,10 +15,11 @@ int ordemCrescente(int vetor[], int n){
     return ordemCrescente(vetor, n-1);
 }
 
+
 int main(){
-    int vetor[] = {1,2,3,4};
+    int vetor[] = {1,2,3,4,5};
     int n;
     scanf("%d", &n);
-    (ordemCrescente(vetor, n))? printf("Esta em ordem crescente") : printf("Nao esta em ordem crescente");
+    (ordemCrescente(vetor, n+1))? printf("Esta em ordem crescente") : printf("Nao esta em ordem crescente");
     return 0;
 }

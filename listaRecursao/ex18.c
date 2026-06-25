@@ -2,7 +2,6 @@
 
 int palindromo (char string[], int n, int contador){
     if (n==0) return 1;
-    if (n==1) return 1;
     else{
         if (string[contador] == string[n]){
             return palindromo(string, n-1, contador+1);
